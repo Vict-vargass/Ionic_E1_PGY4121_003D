@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+  </ion-header> 
+  <!--CONTENIDO ALINEADO A LA MITAD-->
+
+  <div class="bckg-home main-div">
+    <ion-row>
+      <ion-col></ion-col>
+      <ion-col size="9">
+        <ion-card class="fondo-card">
+          <ion-card-header>
+            <ion-card-title class="wit center">Asistencias Duoc UC</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-label class="wit">Usuario</ion-label>
+            <ion-item>
+              <ion-input #nombreUsuario placeholder="Ingrese su nombre de usuario"></ion-input>
+            </ion-item>
+            <br><br>
+            <ion-label class="wit">Contraseña</ion-label>
+            <ion-item>
+              <ion-input type="password" #contrasenia placeholder="Ingrese su contraseña"></ion-input>
+            </ion-item>
+            <br>
+            <a class="wit" href="https://cambiatuclave.duoc.cl">¿Olvidaste tu contraseña?</a>
+            <br> <br>
+            <ion-button shape="round" fill="solid" color="warning" expand="full" (click)="iniciar(nombreUsuario,contrasenia)">
+              ingresar
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col></ion-col>
+    </ion-row>
+  </div>
+</ion-content>
