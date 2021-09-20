@@ -15,7 +15,7 @@ export class HomePage implements OnInit{
   async iniciar(nombreUsuario : HTMLInputElement, contrasenia : HTMLInputElement,){
     const nomUsu = nombreUsuario.value;
     const conta = contrasenia.value;
-    if (nomUsu == "alumno" && conta =="1234" || nomUsu=="docente" && conta=="123"){
+    if (nomUsu == "alumno" && conta =="1234"){
       console.log("logueado")
       this.rout.navigate(['/pagina-principal'])
     }else{
